@@ -1,0 +1,70 @@
+body{
+  padding: 25px;
+  background-color: #FF3B00;
+}
+.image{
+  display: block;
+  width: 250px;        /* ajuste ideal */
+  margin: 0 auto;
+  margin-bottom: 20px; /* espaço entre logo e botões */
+}
+.info_loja{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #FF3B00;  /* fundo laranja Beam */
+  padding-top: 20px;
+}
+
+/* Div que guarda os botões */
+.links {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* BOTÃO PADRÃO */
+.btn {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* CENTRALIZA O TEXTO */
+  gap: 12px;                    /* espaço entre ícone e texto */
+
+  padding: 18px 25px;
+  background: #fce0b5;
+  border-radius: 40px;
+
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+
+  border: 2px solid #b87333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  
+  transition: 0.2s ease;
+}
+
+/* ÍCONE */
+.btn img {
+  width: 70px;      /* aqui você aumenta/diminui o ícone */
+  height: 70px;
+  object-fit: contain;
+}
+
+/* HOVER */
+.btn:hover {
+  transform: scale(1.03);
+  background: #ffdca7;
+}
