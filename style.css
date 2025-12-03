@@ -1,45 +1,51 @@
-body{
+/* ======== ESTILO GERAL ======== */
+body {
   padding: 25px;
   background-color: #FF3B00;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
-.image{
+
+/* ======== LOGO ======== */
+.image {
   display: block;
-  width: 250px;        /* ajuste ideal */
-  margin: 0 auto;
-  margin-bottom: 20px; /* espaço entre logo e botões */
+  width: 60%;            /* proporcional */
+  max-width: 280px;      /* limite no PC */
+  margin: 0 auto 20px;
 }
-.info_loja{
+
+/* ======== ENDEREÇO ======== */
+.info_loja {
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
+
+/* ======== CONTAINER PRINCIPAL ======== */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #FF3B00;  /* fundo laranja Beam */
-  padding-top: 20px;
+  background: #FF3B00;
 }
 
-/* Div que guarda os botões */
+/* ======== WRAPPER DOS LINKS ======== */
 .links {
-  width: 80%;
+  width: 90%;
   max-width: 500px;
   text-align: center;
 }
 
-/* BOTÃO PADRÃO */
+/* ======== ESTILO DOS BOTÕES ======== */
 .btn {
   width: 100%;
-  max-width: 400px;
   margin: 15px auto;
 
   display: flex;
   align-items: center;
-  justify-content: center;      /* CENTRALIZA O TEXTO */
-  gap: 12px;                    /* espaço entre ícone e texto */
+  justify-content: center;
+  gap: 12px;
 
   padding: 18px 25px;
   background: #fce0b5;
@@ -47,24 +53,55 @@ body{
 
   text-decoration: none;
   color: #000;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;   /* responsivo */
+  font-weight: 600;
 
   border: 2px solid #b87333;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  
   transition: 0.2s ease;
 }
 
-/* ÍCONE */
+/* ======== ÍCONES ======== */
 .btn img {
-  width: 70px;      /* aqui você aumenta/diminui o ícone */
-  height: 70px;
+  width: 60px;      /* responsivo */
+  height: 60px;
   object-fit: contain;
 }
 
-/* HOVER */
+/* ======== HOVER ======== */
 .btn:hover {
   transform: scale(1.03);
   background: #ffdca7;
+}
+
+/* =========================================
+   ========  RESPONSIVIDADE MOBILE  ========
+   ========================================= */
+
+@media (max-width: 600px) {
+  
+  body {
+    padding: 15px;
+  }
+
+  .image {
+    width: 70%;
+    max-width: 250px;
+  }
+
+  .info_loja {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 15px 18px;
+    font-size: 1.1rem;
+    border-radius: 35px;
+  }
+
+  .btn img {
+    width: 50px;
+    height: 50px;
+  }
 }
